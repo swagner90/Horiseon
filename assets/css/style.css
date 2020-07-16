@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+/* Deleted <div class="header">, replaced with <header> tags. */
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+/* Deleted <div> tags for Nagivation Bar, replaced with <nav>. */
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/* Made a selector for <span> instead of creating a class/id attribute for the "seo" string.
+   (Will work as long as <span> is only used once. Otherwise, need to create a class if used again. */
+span {
+    color: #d9dcd6;
+}
+
+ul li { /*Combined ul & li selectors into one block.*/
+    display: inline-block;
+    margin-left: 25px;
+    list-style-type: none;
+}
+
+a {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* 1.) Moved all the elements related to ".content" class under it just for organization.
+   2.) Changed the following three blocks to have id Selectors in order to prevent issues when cleaning up classes below. */
+.content-block {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* Shortened all three image blocks for "<div> content" into 1 block by changing class to "content-block". */ 
+.content-block img {
+    max-height: 200px;
+}
+
+/* Like above, shortened all three <h2> tags into one block after changing class to "content-block" */
+.content-block h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/* Grouped all three benefit boxes into one .CSS block by adding another class in HTML file.*/
+.benefit-block {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefits h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-picture img { /*Shortened ".benefit img" blocks by changing class names.*/
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 20px;
+}
