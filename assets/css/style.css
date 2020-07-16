@@ -30,8 +30,7 @@ h1 {
     font-size: 48px;
 }
 
-/* Made a selector for <span> instead of creating a class/id attribute for the "seo" string.
-   (Will work as long as <span> is only used once. Otherwise, need to create a class if used again. */
+/* Made <span> the selector instead of creating a class/id attribute for the "seo" string. */
 span {
     color: #d9dcd6;
 }
@@ -88,7 +87,7 @@ p {
 }
 
 /* Shortened all three image blocks for "<div> content" into 1 block by changing class to "content-block". */ 
-.content-block img {
+.content-picture img {
     max-height: 200px;
 }
 
